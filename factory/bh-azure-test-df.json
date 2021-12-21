@@ -1,0 +1,9 @@
+{
+	"name": "bh-azure-test-df",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b8eb5ae0-cbab-4e1b-8d91-d32b08015061",
+		"tenantId": "af4e8ca9-cd17-46b6-8617-bc58ed361dfc"
+	}
+}
