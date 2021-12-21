@@ -1,0 +1,72 @@
+az storage account create \
+  --kind StorageV2 \
+  --resource-group learn-6e3c4c6f-f934-42ec-9560-193333ff7b07 \
+  --location centralus \
+  --name azurbhstoraccv1
+  
+  
+az storage account create \
+ --name  mslearn4568 \
+ --resource-group learn-4f213dd7-6b27-484d-ae3f-9167195c5c1b \
+ --sku Standard_GRS \
+ --kind StorageV2
+ 
+ 
+az cosmosdb keys list \
+    --name COSMOS-DB-NAME \
+    --resource-group myresourcegroup \
+    --subscription "My Subscription" \
+    --type keys
+	
+	
+az cosmosdb create \
+    --name cosmos11209 \
+    --kind GlobalDocumentDB \
+    --resource-group learn-4f213dd7-6b27-484d-ae3f-9167195c5c1b
+
+{
+  "connectionStrings": [
+    {
+      "connectionString": "AccountEndpoint=https://cosmos11209.documents.azure.com:443/;AccountKey=8cneSwiPG64s0y5G6OcsBIoLv9WmPekpXs9bv0dYBvd2cTdEJE24WtHjtL8PscL1EP98GcqG3SGBP49zMt2g6A==;",
+      "description": "Primary SQL Connection String"
+    },
+    {
+      "connectionString": "AccountEndpoint=https://cosmos11209.documents.azure.com:443/;AccountKey=poc5myMb1hg4wsJHkJhbzvKIdeILtWauZ6QtVrx6dun4kDCcPFeFJClFreTQMy6A110GrQR6GgGlu7iskW00zQ==;",
+      "description": "Secondary SQL Connection String"
+    },
+    {
+      "connectionString": "AccountEndpoint=https://cosmos11209.documents.azure.com:443/;AccountKey=Ehzo29e09KQFCJKOWkQPd91MBAiYirRLug89M7BsOoGrm88WJlMFSEvjtFAgAOzzURqLqs932co70iEC21MU4Q==;",
+      "description": "Primary Read-Only SQL Connection String"
+    },
+    {
+      "connectionString": "AccountEndpoint=https://cosmos11209.documents.azure.com:443/;AccountKey=fQve5P49Hwg43qbDWH2kZeRDBnu6Qws23FJcOIlJc2vxQYGH5T4diUuBuzLhRSdtG6jEBvM4lNSl7i4NGYEWBg==;",
+      "description": "Secondary Read-Only SQL Connection String"
+    }
+  ]
+}
+
+str account
+straccdevazure1
+key 1
+key
+2tHrOKksIy7weEU09AXOmY7DL8RZr6bnxqAyXCI3ZWSFVQZh9fifHB8zcO347Ku4KxlKOLZVlc+uHGePm2vhIQ==
+connection string
+DefaultEndpointsProtocol=https;AccountName=straccdevazure1;AccountKey=2tHrOKksIy7weEU09AXOmY7DL8RZr6bnxqAyXCI3ZWSFVQZh9fifHB8zcO347Ku4KxlKOLZVlc+uHGePm2vhIQ==;EndpointSuffix=core.windows.net
+
+$context = New-AzureStorageContext -StorageAccountName straccdevazure1 -StorageAccountKey 2tHrOKksIy7weEU09AXOmY7DL8RZr6bnxqAyXCI3ZWSFVQZh9fifHB8zcO347Ku4KxlKOLZVlc+uHGePm2vhIQ==
+
+dotnet run "DefaultEndpointsProtocol=https;AccountName=straccdevazure1;AccountKey=2tHrOKksIy7weEU09AXOmY7DL8RZr6bnxqAyXCI3ZWSFVQZh9fifHB8zcO347Ku4KxlKOLZVlc+uHGePm2vhIQ==;EndpointSuffix=core.windows.net" testcontainer
+
+$context = New-AzureStorageContext -StorageAccountName straccdevazure1 -StorageAccountKey 2tHrOKksIy7weEU09AXOmY7DL8RZr6bnxqAyXCI3ZWSFVQZh9fifHB8zcO347Ku4KxlKOLZVlc+uHGePm2vhIQ==
+
+Get-AzureStorageServiceLoggingProperty -Context $context -ServiceType Blob
+
+dotnet run "DefaultEndpointsProtocol=https;AccountName=straccdevazure1;AccountKey=2tHrOKksIy7weEU09AXOmY7DL8RZr6bnxqAyXCI3ZWSFVQZh9fifHB8zcO347Ku4KxlKOLZVlc+uHGePm2vhIQ==;EndpointSuffix=core.windows.net" testcontainer
+
+export AZURE_STORAGE_ACCOUNT=straccdevazure1
+
+Key 1
+IR@53654c41-829d-4389-87de-15b18740381c@bh-az-data-factory@ServiceEndpoint=bh-az-data-factory.uksouth.datafactory.azure.net@IARnpC6XA5JAkPM7ndwfcFCGHSSt0QHamPRIJk7qYeI=
+
+Key 2
+IR@53654c41-829d-4389-87de-15b18740381c@bh-az-data-factory@ServiceEndpoint=bh-az-data-factory.uksouth.datafactory.azure.net@dmYKTlHXKhOVIn7Bdf/2WmFC1iqwZ39hZYQZSvZRJhk=
